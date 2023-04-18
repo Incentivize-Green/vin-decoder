@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "code": "VF",
     "name": "France"

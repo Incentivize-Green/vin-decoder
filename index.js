@@ -1,12 +1,5 @@
-const fs = require('fs');
-const path = require('path');
-
-const countries = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'data', 'countries.json'), 'utf8')
-);
-const manufacturers = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'data', 'manufacturers.json'), 'utf8')
-);
+const countries = require('./data/countries.js')
+const manufacturers = require('./data/manufacturers.js')
 
 const validate = (vin, checksumParam) => {
   const splitVIN = vin.toLowerCase().split('');
