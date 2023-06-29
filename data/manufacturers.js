@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "code": "AAA",
     "name": "Audi South Africa made by Volkswagen of South Africa"
